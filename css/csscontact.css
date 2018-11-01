@@ -19,7 +19,8 @@
     display: grid;
     width: 100%;
 }
-img#headerhome{
+
+img#headerhome {
 
     padding: 0;
 }
@@ -43,6 +44,13 @@ img#headerhome{
 
 section {
     padding: 0px;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(49, 52, 58);
+    color: white;
+    clear: both;
 }
 
 * {

@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
 }
-img#headerhome{
+
+img#headerhome {
     width: 50%;
     padding: 0;
 }
@@ -67,6 +68,7 @@ section, footer {
 }
 
 footer {
+    padding: 20px;
     background-color: rgb(49, 52, 58);
     color: white;
     clear: both;
