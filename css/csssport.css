@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
 }
 
 nav {
@@ -11,6 +14,13 @@ img#headerhome {
     padding: 0;
 }
 
+footer {
+    padding: 20px;
+    background-color: rgb(49, 52, 58);
+    color: white;
+    clear: both;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -20,6 +30,11 @@ body {
 
 section#stuk2 {
     vertical-align: top;
+}
+
+img#headerhome {
+    width: 40%;
+    padding: 0;
 }
 
 article#stuk3 {
@@ -42,10 +57,9 @@ header {
     text-align: center;
 }
 
-h3 {
-    font-size: 22px;
-    font-weight: 600;
+h1 {
     color: rgb(109, 171, 198);
+    text-align: center;
 }
 
 li {
@@ -93,22 +107,29 @@ div#text {
     color: white;
 }
 
-/*Alles hier onder heeft te maken de responisveheid van de website*/
-
 @media all and (min-width: 550px) {
+    article.plaatjes img {
+        width: 29%;
+        margin: 1%;
+    }
 
-    section#stuk1 {
-        width: 40%;
+    article.a, article.b {
+        display: inline-block;
+        width: 45%;
         float: left;
+        margin-left: 10px;
     }
 
-    section#stuk2 {
-        width: 60%;
-        float: right;
+    article.plaatjes {
+        float: left;
+        width: 50%;
     }
 
-    ul {
-
+    article.tekst {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 90%;
+        float: left;
     }
 
     li {
@@ -118,32 +139,33 @@ div#text {
 }
 
 @media all and (min-width: 930px) {
+    article.plaatjes img {
+        width: 29%;
+        margin: 1%;
+    }
 
-    section#stuk1 {
-        width: 32%;
+    article.a, article.b {
+        width: 40%;
         float: left;
+        margin-left: 20px;
     }
 
-    section#stuk2 {
-        width: 68%;
+    article.plaatjes {
+        float: left;
+        width: 60%;
+    }
+
+    article.tekst {
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 39%;
         float: right;
-    }
-
-    article {
-        display: inline-block;
-        width: 48%;
-        margin-right: 26px;
-    }
-
-    article:nth-child(even) {
-        margin-right: 0px;
     }
 }
 
 @media all and (min-width: 1200px) {
-    div#wrapper {
-        width: 1200px;
+    div.midden {
         margin: auto;
+        width: 1200px;
     }
 }
-
